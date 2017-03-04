@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, render_template
 import sys
-sys.path.append('/work/atango')
+sys.path.append('atango')
 from view import api, dashboard, now_or_past, sov, mecab, ma
 from lib.logger import logger
 
@@ -18,4 +18,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host='0.0.0.0', port=5002, debug=True)

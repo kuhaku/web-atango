@@ -1,0 +1,23 @@
+{
+  "elasticsearch":{
+    "host": "localhost",
+    "port": 9200
+  },
+  "Redis":{
+    "now_or_past": {
+      "host": "localhost",
+      "port": 6379,
+      "db": 0
+    },
+    "twitter": {
+      "host": "localhost",
+      "port": 6379,
+      "db": 1
+    },
+    "log": {
+      "host": "localhost",
+      "port": 6379,
+      "db": 2
+    }
+  }
+}
