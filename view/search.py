@@ -8,7 +8,7 @@ from . import parse_log
 app = Blueprint('search', __name__, template_folder='templates')
 elasticsearch_setting = file_io.read('atango.json')['elasticsearch']
 
-@app.route("/search/", methods=['GET'])
+@app.route("/sw/search/", methods=['GET'])
 def search():
     query = request.args.get('query')
     es = Elasticsearch([elasticsearch_setting])

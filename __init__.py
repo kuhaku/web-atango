@@ -13,7 +13,7 @@ app.debug = True
 app.config['DEBUG'] = True
 
 
-@app.route("/")
+@app.route("/sw/")
 def index():
     return render_template('index.html')
 

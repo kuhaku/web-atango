@@ -37,7 +37,7 @@ def determine_css(ua):
     return url_for('static', filename=css_file)
 
 
-@app.route("/now_or_past/", methods=['POST', 'GET'])
+@app.route("/sw/now_or_past/", methods=['POST', 'GET'])
 def now_or_past():
     def get_log_by_id(_id):
         es = Elasticsearch(ELASTICSEARCH_SETTING)

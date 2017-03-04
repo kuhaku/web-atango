@@ -10,7 +10,7 @@ fwords = file_io.read('fwords.json')
 TWO_WEEK = 60*60*24*14
 
 
-@app.route("/api/dialogue/")
+@app.route("/sw/api/dialogue/")
 def dialogue():
     def explicit_fword(text):
         for (implicit, explicit) in fwords.items():

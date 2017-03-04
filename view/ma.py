@@ -47,7 +47,7 @@ def suspected_word(words, posts):
     return suspects
 
 
-@app.route("/ma/", methods=['GET', 'POST'])
+@app.route("/sw/ma/", methods=['GET', 'POST'])
 def morphological_analysis():
     if request.method != 'POST':
         return render_template('ma.html')

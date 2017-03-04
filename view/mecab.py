@@ -124,7 +124,7 @@ def update_dic():
     Popen(['bash', '/work/atango/util/mecab/mecab_update.sh'])
 
 
-@app.route("/mecab/", methods=['GET', 'POST'])
+@app.route("/sw/mecab/", methods=['GET', 'POST'])
 def mecab_maintenance():
     ma_result = ''
     term_added_message = ''

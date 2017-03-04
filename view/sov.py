@@ -170,13 +170,13 @@ def generate_report(target_dt):
                            slowest_res=slowest_res, slowest_res_post=slowest_res_posts)
 
 
-@app.route("/sov/latest")
+@app.route("/sw/sov/latest")
 def sov_latest():
     yesterday_dt = datetime.today() - timedelta(days=1)
     return generate_report(yesterday_dt)
 
 
-@app.route("/sov/", methods=['GET'])
+@app.route("/sw/sov/", methods=['GET'])
 def sov():
     dt = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
     if request.args.get('date'):

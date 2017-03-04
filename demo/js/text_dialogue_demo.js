@@ -62,7 +62,7 @@ function submit_message(){
   }
   httpObj.onreadystatechange = function(){speech(httpObj);};
   if (httpObj){
-    url = 'http://mamisan.no-ip.org/api/dialogue/?text='+users_input;
+    url = window.location.origin+'/sw/api/dialogue/?text='+users_input;
     httpObj.open("GET", url, true);
     httpObj.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     httpObj.send();
