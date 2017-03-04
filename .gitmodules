@@ -1,0 +1,3 @@
+[submodule "atango"]
+	path = atango
+	url = https://github.com/kuhaku/atango.git
